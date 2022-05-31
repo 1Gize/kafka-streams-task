@@ -1,0 +1,34 @@
+= Kafka streams task
+:library: Asciidoctor
+:idprefix:
+:numbered:
+:toc: preamble
+:toc-title: pass:[<h3>Table od contents</h3>]
+ifdef::env-github[]
+:note-caption: :information_source:
+:tip-caption: :bulb:
+endif::[]
+
+== What is it?
+
+Program works as kafka-streams service which reads data from to topics
+transforms it and sends to another 2 topics.
+
+== Dependencies
+
+To run this program u will only need basic scala
+
+
+== How to run?
+
+To run this program first launch all needed kafka services and after that launch the program.
+Make sure u are writing/reading to/from topics specified in program.
+
+
+== What were the main difficulties?
+
+If i had more time i would create diffrent topology for second topic so i can
+send negative numbers also right now the program would fail due to
+.toInt method. Also with more time i would write test which would test the topology
+and compare values on input and output topic, I would also add scopt
+so the topics could be specified by user.
